@@ -2,11 +2,11 @@
     <div class="container">
         <header class="navbar">
             <div class="navbar-inner">
-                <a href="{{pathFor 'postsList'}}" class="brand">Microscope</a>
+                <a class="brand" href="/">Microscope</a>
             </div>
         </header>
         <div id="main" class="row-fluid">
-            {{> yield}}  <!-- Here will be template -->
+            {{> yield}} <!-- Here will be template from routing -->
         </div>
     </div>
 </template>
