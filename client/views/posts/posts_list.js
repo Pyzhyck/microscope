@@ -1,6 +1,7 @@
 /* postsList template manager */
 
 /* Imitation of some database in server */
+/*
 var postsData = [
     {
         title: 'Post about something 1',
@@ -17,5 +18,14 @@ var postsData = [
 ];
 
 Template.postsList.helpers({
-    posts: postsData  /* Send postdData to posts_list.html {{#each posts}} */
+    posts: postsData  /!* Send postdData to posts_list.html {{#each posts}} *!/
+});*/
+/* -------------------------------------------------------------------------------- */
+
+/* Get data from collection Posts (MongoDB database) */
+
+Template.postsList.helpers({
+    posts: function() {
+        return Posts.find();
+    }
 });
